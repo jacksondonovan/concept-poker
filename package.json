@@ -1,0 +1,19 @@
+{
+  "name": "newDevChallenge2",
+  "version": "1.0.0",
+  "description": "C3D JS Interview Challenge",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksondonovan/concept-poker.git"
+  }
+}
