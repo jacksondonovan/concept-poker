@@ -10,7 +10,7 @@ class PokerHand {
 
   separateValuesSuits() {
     for(let i = 0; i < this.cardArray.length; i++) {
-      switch(this.cardArray[i].split('')[0]) {
+      switch(this.cardArray[i][0]) {
         case 'A': this.valueArray.push(12)
           break;
         case 'K': this.valueArray.push(11);
@@ -37,7 +37,7 @@ class PokerHand {
           break;
         case '2': this.valueArray.push(0);
           break;
-        default: this.valueArray.push(900);
+        default: this.hand.isValid = false;
       }
       let suit = this.cardArray[i].split('').pop();
       this.suitArray.push(suit);
